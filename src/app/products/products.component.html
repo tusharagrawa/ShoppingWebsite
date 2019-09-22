@@ -1,1 +1,19 @@
-<p>products works!</p>
+<div style="text-align:left;width:500px;">
+  <h1>
+    List Of Products
+  </h1>
+
+  <table *ngIf="products">
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Image : </th>
+    </tr>
+
+    <tr *ngFor="let product of products">
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td>{{product.imageUrl}}</td>
+    </tr>
+  </table>
+</div>

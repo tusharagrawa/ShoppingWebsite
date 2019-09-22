@@ -14,6 +14,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import {RouterModule} from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ProductsComponent,
     ShoppingCartComponent,
     CheckoutComponent,
-    OrderSuccessComponent
+    OrderSuccessComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     NgbModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: '', component: HomeComponent},
       {path: 'home', component: HomeComponent},
