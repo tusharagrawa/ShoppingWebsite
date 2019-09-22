@@ -14,21 +14,14 @@ export class ProductsComponent implements OnInit {
   shoppingCart: ShoppingCart = {} as ShoppingCart;
 
   constructor() {
+    this.shoppingCart = new ShoppingCart();
   }
 
   ngOnInit() {
   }
 
   addToCart(product: Product) {
-    // const cartId = JSON.stringify(product.id);
-    // if (!sessionStorage.getItem(cartId)) {
-    //   sessionStorage.setItem('cartId', cartId);
-    //   console.log(product.name);
-    //   console.log('Num of Products in Cart : ' + sessionStorage);
-    // } else {
-    //   console.log(product.name);
-    //   console.log('Num of Products in Cart : ' + sessionStorage);
-    // }
+
     const cartId = JSON.stringify(product.id);
     if (!sessionStorage.cartId) {
       product.quantity = 1;
@@ -39,5 +32,14 @@ export class ProductsComponent implements OnInit {
       this.shoppingCart.addProduct(product);
       sessionStorage.setItem(cartId,  JSON.stringify(this.shoppingCart));
     }
+  }
+
+  getQuantity(product: Product) {
+
+    if(!product.quantity) {
+      return 0;
+    }
+    return product.quantity;
+
   }
 }
