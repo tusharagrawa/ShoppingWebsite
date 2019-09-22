@@ -1,37 +1,37 @@
 [{
     "id": 1,
-    "name": "POS Machine",
+    "name": "Taj Mahal",
     "price": 50,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Credit_card_terminal_in_Laos.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg"
   },
   {
     "id": 2,
-    "name": "Credit Card",
+    "name": "Eiffel Tower",
     "price": 10,
-    "imageUrl": "https://live.staticflickr.com/8368/28886680351_3da860cab1_b.jpg"
+    "imageUrl": "https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg"
   },
   {
     "id": 3,
-    "name": "Debit Card",
+    "name": "Pyramids",
     "price": 15,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/CHASE_ATM_card-2476522151_5690b161be_o.jpg"
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/06/04/16/33/pyramids-2371501__340.jpg"
   },
   {
     "id": 4,
-    "name": "Helix Payment Gateway",
+    "name": "Statue of Liberty",
     "price": 1,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Payment_Gateway_Merchant_Account.png"
+    "imageUrl": "https://cdn.pixabay.com/photo/2017/03/03/16/28/statue-of-liberty-2114376__340.jpg"
   },
   {
     "id": 5,
-    "name": "New Bank Account",
+    "name": "Great Wall of China",
     "price": 5,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjn_h_fMg0ENbRc5rihXBsO-4C8o4kbhPfwwIi7q8f6-cXJhMJ"
+    "imageUrl": "https://images.pexels.com/photos/1423580/pexels-photo-1423580.jpeg"
   },
   {
     "id": 6,
-    "name": "Customer Support",
+    "name": "Roman Colosseum",
     "price": 1,
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9e6xqY7IketUb_eZNhb9SdMC2rXF2qW7BNVOMgRqXvjzz5gH"
+    "imageUrl": "https://cdn.pixabay.com/photo/2015/05/31/15/39/colosseum-792202__340.jpg"
   }
 ]

@@ -1,19 +1,26 @@
-<div style="text-align:left;width:500px;">
-  <h1>
-    List Of Products
-  </h1>
+<div class="row">
 
-  <table *ngIf="products">
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Image : </th>
-    </tr>
-
-    <tr *ngFor="let product of products">
-      <td>{{product.name}}</td>
-      <td>{{product.price}}</td>
-      <td>{{product.imageUrl}}</td>
-    </tr>
-  </table>
+  <div class="col">
+    <div class="row justify-content-md-around">
+      <ng-container *ngFor="let p of products let i = index">
+        <div class="card-deck mb-5">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" style="height: 200px; width: 100%" [src]="p.imageUrl">
+            <div class="card-body">
+              <h4 class="card-title">{{p.name}}</h4>
+              <p class="card-text">{{p.price | currency:'USD':true}}</p>
+            </div>
+            <div class="card-footer">
+              <button (click)="addToCart(p)"
+              class="btn btn-primary btn-block">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="(i +1) % 2 === 0" class="w-100"></div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="col-3">
+    Cart Here
+  </div>
 </div>
