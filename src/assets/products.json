@@ -1,0 +1,37 @@
+[{
+    "id": 1,
+    "name": "POS Machine",
+    "price": 50,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Credit_card_terminal_in_Laos.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Credit Card",
+    "price": 10,
+    "imageurl": "https://live.staticflickr.com/8368/28886680351_3da860cab1_b.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Debit Card",
+    "price": 15,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/CHASE_ATM_card-2476522151_5690b161be_o.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Helix Payment Gateway",
+    "price": 1,
+    "imageurl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Payment_Gateway_Merchant_Account.png"
+  },
+  {
+    "id": 5,
+    "name": "New Bank Account",
+    "price": 5,
+    "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjn_h_fMg0ENbRc5rihXBsO-4C8o4kbhPfwwIi7q8f6-cXJhMJ"
+  },
+  {
+    "id": 6,
+    "name": "Customer Support",
+    "price": 1,
+    "imageurl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL9e6xqY7IketUb_eZNhb9SdMC2rXF2qW7BNVOMgRqXvjzz5gH"
+  }
+]
