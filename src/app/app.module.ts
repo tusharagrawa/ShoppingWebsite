@@ -7,7 +7,6 @@ import {AngularFireDatabaseModule} from 'angularfire2/database';
 import {AngularFireAuthModule} from 'angularfire2/auth';
 import { environment } from 'src/environments/environment';
 import { BsNavbarComponent } from './bs-navbar/bs-navbar.component';
-import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -21,7 +20,6 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     BsNavbarComponent,
-    HomeComponent,
     ProductsComponent,
     ShoppingCartComponent,
     CheckoutComponent,
@@ -35,9 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     NgbModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent},
-      {path: 'home', component: HomeComponent},
-      {path: 'products', component: ProductsComponent},
+      {path: '', component: ProductsComponent},
+      {path: 'home', component: ProductsComponent},
       {path: 'shopping-cart', component: ShoppingCartComponent},
       {path: 'order-success', component: OrderSuccessComponent},
       {path: 'checkout', component: CheckoutComponent}
