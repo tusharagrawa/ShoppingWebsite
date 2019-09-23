@@ -2,28 +2,30 @@
 
   <div class="col">
     <div class="row justify-content-md-around">
-      <ng-container *ngFor="let p of products let i = index">
+      <ng-container *ngFor="let item of products let i = index">
         <div class="card-deck mb-5">
           <div class="card" style="width: 20rem;">
-            <img class="card-img-top" style="height: 200px; width: 100%" [src]="p.imageUrl">
+            <img class="card-img-top" style="height: 200px; width: 100%" [src]="item.imageUrl">
             <div class="card-body">
-              <h4 class="card-title">{{p.name}}</h4>
-              <p class="card-text">{{p.price | currency:'USD':true}}</p>
+              <h4 class="card-title">{{item.name}}</h4>
+              <p class="card-text">{{item.price | currency:'USD':true}}</p>
             </div>
             <div class="card-footer">
-              <button *ngIf="getQuantity() === 0;  else updateQuantity" (click)="addToCart(p)"
+              <button *ngIf="getQuantity(item) === 0;  else updateQuantity" (click)="addToCart(item)"
                 class="btn btn-primary btn-block">Add to Cart</button>
 
               <ng-template #updateQuantity>
                 <div class="row no-gutters">
                   <div class="col-2">
-                    <button class="btn btn-secondary btn-block">-</button>
+                    <button (click)="removeFromCart(item)"
+                    class="btn btn-primary btn-block">-</button>
                   </div>
                   <div class="col text-center">
-                    {{ getQuantity(p) }} in cart
+                    {{ getQuantity(item) }} in cart
                   </div>
                   <div class="col-2">
-                    <button class="btn btn-secondary btn-block">+</button>
+                    <button (click)="addToCart(item)"
+                     class="btn btn-primary btn-block">+</button>
                   </div>
                 </div>
 

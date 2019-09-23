@@ -4,7 +4,7 @@ export class ShoppingCart {
 
   product: Product[] = [];
 
-  addProduct(newProduct: Product): any {
+  addProduct(newProduct: Product): Product {
     if (this.product == null) {
       this.product[0] = newProduct;
     } else {
@@ -12,12 +12,12 @@ export class ShoppingCart {
 
         if (prod.id === newProduct.id) {
           prod.quantity++;
-          return;
+          return prod;
         }
 
       });
       this.product[this.product.length] = newProduct;
+      return newProduct;
     }
   }
-
 }
