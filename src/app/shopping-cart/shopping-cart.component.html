@@ -3,6 +3,11 @@
 <div class="row col-10" *ngIf="cart">
   <p>
     You have {{qty}} items in your shopping cart
+    <button (click)="clearCart()"  *ngIf="qty"
+    [routerLink]="['/shopping-cart']" routerLinkActive="router-link-active"
+    class="btn btn-outline-danger btn-sm">
+      Clear Shopping Cart
+    </button>
   </p>
   <table class="table">
     <thead>
@@ -30,9 +35,8 @@
       </tr>
     </tfoot>
   </table>
-  <button (click)="clearCart()"
-  [routerLink]="['/shopping-cart']" routerLinkActive="router-link-active"
-  class="btn btn-danger btm-sm">
-    Clear Shopping Cart
-  </button>
+  <a class="btn btn-primary" *ngIf="qty"
+  routerLink="/checkout/{{totalPrice}}">
+    Check Out
+  </a>
 </div>

@@ -37,7 +37,7 @@ import { HttpClientModule } from '@angular/common/http';
       {path: 'home', component: ProductsComponent},
       {path: 'shopping-cart', component: ShoppingCartComponent},
       {path: 'order-success', component: OrderSuccessComponent},
-      {path: 'checkout', component: CheckoutComponent}
+      {path: 'checkout/:price', component: CheckoutComponent}
     ])
     ],
   providers: [],
